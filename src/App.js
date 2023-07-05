@@ -6,9 +6,12 @@ class MyApp extends Component {
   };
   render() {
     return(
-    
+      <>
+    <div className='heading'>
+      <h1>Enter any text and see the output reversed !</h1>
+    </div>
       <div id='app'>
-        <h1>Enter any text and see the output reversed !</h1>
+        
         <div className='top'>
           <input type='text' id='inputFld' onChange={e => this.setState({ txt: e.target.value })} />
         </div>
@@ -16,6 +19,7 @@ class MyApp extends Component {
           <span className='output'>{this.state.txt.split('').reverse().join('')}</span>
         </div>
       </div>
+      </>
     )
   }
 }
