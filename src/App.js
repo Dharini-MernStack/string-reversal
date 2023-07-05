@@ -8,6 +8,7 @@ class MyApp extends Component {
     return(
     
       <div id='app'>
+        <h1>Enter any text and see the output reversed !</h1>
         <div className='top'>
           <input type='text' id='inputFld' onChange={e => this.setState({ txt: e.target.value })} />
         </div>
